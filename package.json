@@ -1,0 +1,41 @@
+{
+  "name": "roingus",
+  "description": "A Lemmy client built with Remix",
+  "private": true,
+  "sideEffects": false,
+  "license": "OSL-3.0",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/css-bundle": "^1.19.1",
+    "@remix-run/node": "^1.19.1",
+    "@remix-run/react": "^1.19.1",
+    "@remix-run/serve": "^1.19.1",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "isbot": "^3.6.8",
+    "lemmy-js-client": "0.18.3-rc.3",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remix-flat-routes": "^0.5.10",
+    "tailwind-merge": "^1.14.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.19.1",
+    "@remix-run/eslint-config": "^1.19.1",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.38.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
