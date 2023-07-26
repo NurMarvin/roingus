@@ -9,6 +9,7 @@ import Image from "./Image";
 import { useSiteContext } from "~/contexts/SiteContext";
 
 import { cx } from "~/lib/utils";
+import { Github } from "lucide-react";
 
 type NavbarItemProps = {
   href: string;
@@ -60,6 +61,17 @@ function Navbar() {
       </NavLink>
       <ul className="flex gap-4">
         <NavbarItem href="/communities">Communities</NavbarItem>
+      </ul>
+      <ul className="flex gap-4 ml-auto">
+        <a
+          href="https://github.com/NurMarvin/roingus"
+          className="flex items-center gap-2 dark:text-gray-300 dark:hover:text-gray-100 px-3 py-2 font-medium text-gray-500 hover:text-gray-900"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github className="w-6 h-6" />
+          Source Code
+        </a>
       </ul>
     </nav>
   );
